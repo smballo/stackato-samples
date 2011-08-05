@@ -4,3 +4,6 @@
 [submodule "node/hummingbird"]
 	path = node/hummingbird
 	url = git://github.com/ActiveState/hummingbird.git
+[submodule "node/etherpad-lite"]
+	path = node/etherpad-lite
+	url = git://github.com/ActiveState/etherpad-lite.git
