@@ -6,4 +6,4 @@
 
 ## Deploying to Stackato
 
-    stackato push wsgi-helloworld
+    stackato push -n
