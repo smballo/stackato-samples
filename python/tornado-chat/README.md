@@ -11,4 +11,4 @@ web framework. It uses your Google account for login.
 
 ## Deploying to Stackato
 
-    stackato push tornado-chat
+    stackato push -n

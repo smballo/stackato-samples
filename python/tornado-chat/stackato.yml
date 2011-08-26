@@ -1,0 +1,4 @@
+name: chat
+framework:
+  type: python
+  startcmd: python app.py
