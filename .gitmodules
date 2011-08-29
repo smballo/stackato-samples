@@ -10,3 +10,6 @@
 [submodule "clojure/twitter-example"]
 	path = clojure/twitter-example
 	url = git://github.com/ActiveState/twitter-example.git
+[submodule "perl/rubric"]
+	path = perl/rubric
+	url = git://github.com/ActiveState/rubric.git
