@@ -1,4 +1,5 @@
 name: chat
-framework:
-  type: python
-  startcmd: python app.py
+
+processes:
+  web: python app.py
+
