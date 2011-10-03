@@ -13,16 +13,15 @@ the Django admin URL at ``http://gtd.stackato.local/admin/``.
 
 ## Deploying to Stackato
 
+First, change the admin password in ``stackato.yml`` to a non-default value:
+
+    vi stackato.yml  # replace 'secret123' with your password
+    
+Then, push to the cloud:
+
     stackato push -n
-
-    stackato run gtd python manage.py syncdb --noinput
-    stackato run gtd python manage.py migrate --noinput
-
-    # Create the admin user
-    stackato run gtd python manage.py createsuperuser --username=admin --email=admin@mydomain.com --noinput
-    stackato run gtd python manage.py changepassword2 admin secret123
-
-    # Visit http://gtd.stackato.local/; go to /admin/ to add tasks, projects and contexts.
+    
+Visit http://gtd.stackato.local/ to see the list of tasks. Visit http://gtd.stackato.local/admin/ to modify tasks, projects and contexts.
  
 ## Want to use MySQL?
 

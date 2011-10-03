@@ -1,14 +1,20 @@
 name: gtd
 
-framework:
-  type: python
-
 mem: 64M
+
+env:
+  DJANGO_SETTINGS_MODULE: settings
+
+hooks:
+  post-staging:
+    - python manage.py syncdb --noinput
+    - python manage.py migrate --noinput
+    - python manage.py createsuperuser --username=admin --email=admin@mydomain.com --noinput
+    - python manage.py changepassword2 admin secret123
 
 services:
   postgresql: postgresql-gtd
 
-ignore: [
-    .git
-    dev.db
-]
+ignores: 
+  - .git
+  - dev.db
