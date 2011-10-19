@@ -19,3 +19,9 @@
 [submodule "clojure/clojuresphere"]
 	path = clojure/clojuresphere
 	url = git@github.com:ActiveState/clojuresphere.git
+[submodule "clojure/rageviewer"]
+	path = clojure/rageviewer
+	url = git://github.com/ActiveState/rageviewer.git
+[submodule "clojure/4clojure"]
+	path = clojure/4clojure
+	url = git://github.com/ActiveState/4clojure.git
