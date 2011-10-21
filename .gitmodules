@@ -18,7 +18,7 @@
 	url = git://github.com/ActiveState/af-sample-wordpress.git
 [submodule "clojure/clojuresphere"]
 	path = clojure/clojuresphere
-	url = git@github.com:ActiveState/clojuresphere.git
+	url = git://github.com/ActiveState/clojuresphere.git
 [submodule "clojure/rageviewer"]
 	path = clojure/rageviewer
 	url = git://github.com/ActiveState/rageviewer.git
