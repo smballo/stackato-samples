@@ -27,4 +27,4 @@
 	url = git://github.com/ActiveState/4clojure.git
 [submodule "node/multisweeper"]
 	path = node/multisweeper
-	url = git@github.com:jdpaton/multisweeper.git
+	url = git://github.com/jdpaton/multisweeper.git
