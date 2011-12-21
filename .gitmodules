@@ -28,3 +28,6 @@
 [submodule "node/multisweeper"]
 	path = node/multisweeper
 	url = git://github.com/jdpaton/multisweeper.git
+[submodule "python/mezzanine"]
+	path = python/mezzanine
+	url = git://github.com/jdpaton/mezzanine-stackato.git
