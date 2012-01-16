@@ -16,3 +16,15 @@
 [submodule "php/wordpress"]
 	path = php/wordpress
 	url = git://github.com/ActiveState/af-sample-wordpress.git
+[submodule "clojure/clojuresphere"]
+	path = clojure/clojuresphere
+	url = git://github.com/ActiveState/clojuresphere.git
+[submodule "clojure/rageviewer"]
+	path = clojure/rageviewer
+	url = git://github.com/ActiveState/rageviewer.git
+[submodule "clojure/4clojure"]
+	path = clojure/4clojure
+	url = git://github.com/ActiveState/4clojure.git
+[submodule "python/mezzanine"]
+	path = python/mezzanine
+	url = git://github.com/jdpaton/mezzanine-stackato.git
