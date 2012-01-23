@@ -1,0 +1,6 @@
+name: celery-web
+
+mem: 128M
+
+services:
+  rabbitmq: rabbit-celery
