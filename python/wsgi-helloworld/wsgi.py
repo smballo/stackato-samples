@@ -18,7 +18,6 @@ def hello_world_app(environ, start_response):
     return ["Hello World (from Python %s WSGI)" % pyver]
 
 
-# For gunicorn
 application = hello_world_app
 
 
