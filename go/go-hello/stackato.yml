@@ -1,0 +1,19 @@
+name: go-hello
+
+framework:
+  type: generic
+
+processes:
+  web: make run
+
+# Install Go: https://wiki.ubuntu.com/Go
+# golang-stable takes ~30M of download size
+hooks:
+  pre-staging:
+    - "sudo add-apt-repository ppa:gophers/go"
+    - "sudo apt-get update"
+    - "sudo apt-get -y install golang-stable"
+
+min_version:
+  client: 0.3.14.0.22
+#  server: 0.8.4
