@@ -1,9 +1,6 @@
 [submodule "perl/mojo-photobooth"]
 	path = perl/mojo-photobooth
 	url = git://github.com/ActiveState/photobooth.git
-[submodule "node/hummingbird"]
-	path = node/hummingbird
-	url = git://github.com/ActiveState/hummingbird.git
 [submodule "node/etherpad-lite"]
 	path = node/etherpad-lite
 	url = git://github.com/ActiveState/etherpad-lite.git
@@ -27,4 +24,4 @@
 	url = git://github.com/ActiveState/4clojure.git
 [submodule "python/mezzanine"]
 	path = python/mezzanine
-	url = git://github.com/jdpaton/mezzanine-stackato.git
+	url = git://github.com/ActiveState/mezzanine-stackato.git

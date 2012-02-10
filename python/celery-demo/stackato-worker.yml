@@ -1,0 +1,9 @@
+name: celery-worker
+
+mem: 128M
+
+processes:
+  web: celeryd
+
+services:
+  rabbitmq: rabbit-celery

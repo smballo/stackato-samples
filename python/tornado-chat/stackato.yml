@@ -1,5 +1,8 @@
 name: chat
 
+framework:
+  type: python
+
 processes:
   web: python app.py
 
