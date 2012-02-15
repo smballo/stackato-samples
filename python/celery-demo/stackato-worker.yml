@@ -5,5 +5,13 @@ mem: 128M
 processes:
   web: celeryd
 
+requirements:
+  pypm:
+    - celery
+
 services:
   rabbitmq: rabbit-celery
+
+min_version:
+  server: 0.9.0.143
+

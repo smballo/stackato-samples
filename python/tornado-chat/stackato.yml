@@ -3,6 +3,13 @@ name: chat
 framework:
   type: python
 
+requirements:
+  pypm:
+    - tornado
+
 processes:
   web: python app.py
+
+min_version:
+  server: 0.9.0.143
 

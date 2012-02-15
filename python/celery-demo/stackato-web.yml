@@ -2,5 +2,13 @@ name: celery-web
 
 mem: 128M
 
+requirements:
+  pypm:
+    - celery
+
 services:
   rabbitmq: rabbit-celery
+
+min_version:
+  server: 0.9.0.143
+
