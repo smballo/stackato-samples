@@ -1,0 +1,19 @@
+store:
+  name: activestate_sample_apps
+  title: ActiveState Sample Stackato Applications
+  contact: Stackato Support <stackato-support@activesate.com>
+  repo: git://github.com/ActiveState/stackato-samples.git
+
+apps:
+- name: bugzilla
+  desc: A Bug Tracking System
+  lang: perl
+  license: Artistic
+  meta:
+    mem: 128M
+- name: multisweeper
+  desc: A Multiplayer Minesweeper-style Game
+  lang: node
+  license: GPL
+  meta:
+    mem: 128M
