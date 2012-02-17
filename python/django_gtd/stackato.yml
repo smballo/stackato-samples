@@ -1,0 +1,16 @@
+name: gtdpack
+
+ervices:
+  postgresql: postgresql-gtd
+
+requirements:
+  staging:
+    ubuntu: [python-dev]
+
+ignores: 
+  - .git
+  - dev.db
+
+min_version:
+  server: 0.9.0.143
+
