@@ -2,6 +2,9 @@ name: celery-worker
 
 mem: 128M
 
+framework:
+  type: python
+
 processes:
   web: celeryd
 
