@@ -1,8 +1,30 @@
 ---
 applications:
-  ./web:
+  web:
     name: celery-web
-    depends-on: ./worker
+    depends-on: worker
+    mem: 128M
+    services:
+      rabbit-celery:
+        type: rabbitmq
+    stackato:
+      requirements:
+        pypm: [celery]
+      min_version:
+        server: 0.9.0.143
 
-  ./worker:
+  worker:
     name: celery-worker
+    mem: 128
+    framework:
+      name: python
+    services:
+      rabbit-celery:
+        type: rabbitmq
+    stackato:
+      processes:
+        web: celeryd
+      requirements:
+        pypm: [celery]
+      min_version:
+        server: 0.9.0.143
