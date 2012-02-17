@@ -3,8 +3,7 @@ name: celery-web
 mem: 128M
 
 requirements:
-  pypm:
-    - celery
+  pypm: [celery]
 
 services:
   rabbitmq: rabbit-celery

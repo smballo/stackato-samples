@@ -6,8 +6,7 @@ processes:
   web: celeryd
 
 requirements:
-  pypm:
-    - celery
+  pypm: [celery]
 
 # Workaround http://bugs.activestate.com/show_bug.cgi?id=92849
 # http://stackoverflow.com/a/3699231/55246 

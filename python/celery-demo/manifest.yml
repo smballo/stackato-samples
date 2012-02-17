@@ -1,0 +1,8 @@
+---
+applications:
+  ./web:
+    name> celery-web
+    depends-on: ./worker
+
+  ./worker:
+    name: celery-worker
