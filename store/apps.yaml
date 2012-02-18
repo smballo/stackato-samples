@@ -5,15 +5,19 @@ store:
   repo: git://github.com/ActiveState/stackato-samples.git
 
 apps:
-- name: bugzilla
+- id: bugzilla
+  name: Bugzilla
   desc: A Bug Tracking System
   lang: perl
   license: Artistic
   meta:
     mem: 128M
-- name: multisweeper
+    services: [ mysql ]
+- id: multisweeper
+  name: MultiSweeper
   desc: A Multiplayer Minesweeper-style Game
   lang: node
   license: GPL
   meta:
     mem: 128M
+    services: [ redis ]
