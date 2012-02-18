@@ -3,7 +3,8 @@ YAML2JSON := perl -MYAML::XS -MJSON::XS \
 
 default: apps.jsonp
 
-apps.jsonp: apps.yaml
-	echo "\$$Console.set_app_store_data(" > $@
+apps.jsonp: apps.yaml Makefile
+	echo "ConsoleObject.set_app_store_data(" > $@
 	$(YAML2JSON) $< >> $@
+	echo >> $@
 	echo ');' >> $@
