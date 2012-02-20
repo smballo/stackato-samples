@@ -5,6 +5,14 @@ store:
   repo: git://github.com/ActiveState/stackato-samples.git
 
 apps:
+- id: photobooth
+  name: Photo Booth
+  desc: A Photo Booth
+  lang: perl
+  license: Artistic
+  meta:
+    mem: 128M
+    services: []
 - id: bugzilla
   name: Bugzilla
   desc: A Bug Tracking System
