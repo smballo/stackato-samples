@@ -5,15 +5,6 @@ store:
   repo: git://github.com/ActiveState/stackato-samples.git
 
 apps:
-- id: photobooth
-  name: Photo Booth
-  desc: A Photo Booth
-  lang: perl
-  license: Artistic
-  meta:
-    mem: 128M
-    services: []
-  dir: perl/mojo-photobooth
 - id: bugzilla
   name: Bugzilla
   desc: A Bug Tracking System
@@ -23,15 +14,6 @@ apps:
     mem: 128M
     services: [ mysql ]
   dir: perl/bugzilla
-- id: multisweeper
-  name: MultiSweeper
-  desc: A Multiplayer Minesweeper-style Game
-  lang: node
-  license: GPL
-  meta:
-    mem: 128M
-    services: [ redis ]
-  dir: node/multisweeper
 - id: env
   name: Env
   desc: Simple Sample App to Print Environment Variables
@@ -41,3 +23,21 @@ apps:
     mem: 128M
     services: [ redis ]
   dir: node/node-env
+- id: multisweeper
+  name: MultiSweeper
+  desc: A Multiplayer Minesweeper-style Game
+  lang: node
+  license: GPL
+  meta:
+    mem: 128M
+    services: [ redis ]
+  dir: node/multisweeper
+- id: photobooth
+  name: Photo Booth
+  desc: A Photo Booth
+  lang: perl
+  license: Artistic
+  meta:
+    mem: 128M
+    services: []
+  dir: perl/mojo-photobooth
