@@ -13,6 +13,7 @@ apps:
   meta:
     mem: 128M
     services: []
+  dir: perl/mojo-photobooth
 - id: bugzilla
   name: Bugzilla
   desc: A Bug Tracking System
@@ -21,6 +22,7 @@ apps:
   meta:
     mem: 128M
     services: [ mysql ]
+  dir: perl/bugzilla
 - id: multisweeper
   name: MultiSweeper
   desc: A Multiplayer Minesweeper-style Game
@@ -29,3 +31,13 @@ apps:
   meta:
     mem: 128M
     services: [ redis ]
+  dir: node/multisweeper
+- id: env
+  name: Env
+  desc: Simple Sample App to Print Environment Variables
+  lang: node
+  license: GPL
+  meta:
+    mem: 128M
+    services: [ redis ]
+  dir: node/node-env
