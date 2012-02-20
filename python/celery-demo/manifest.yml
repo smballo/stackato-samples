@@ -12,7 +12,7 @@ applications:
         pypm: [celery]
       min_version:
         server: 0.9.0.143
-        client: 0.3.14.1.0
+        client: 1.0
 
   worker:
     name: celery-worker
@@ -33,4 +33,4 @@ applications:
           - sudo mount /dev/shm
       min_version:
         server: 0.9.0.143
-        client: 0.3.14.1.0
+        client: 1.0
