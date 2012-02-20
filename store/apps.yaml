@@ -12,7 +12,7 @@ apps:
   license: Artistic
   meta:
     mem: 128M
-    services: [ mysql ]
+    services: [mysql]
   dir: perl/bugzilla
 - id: env
   name: Env
@@ -21,7 +21,7 @@ apps:
   license: GPL
   meta:
     mem: 128M
-    services: [ redis ]
+    services: []
   dir: node/node-env
 - id: multisweeper
   name: MultiSweeper
@@ -30,7 +30,7 @@ apps:
   license: GPL
   meta:
     mem: 128M
-    services: [ redis ]
+    services: [redis]
   dir: node/multisweeper
 - id: photobooth
   name: Photo Booth
