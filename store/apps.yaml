@@ -22,7 +22,7 @@ apps:
   meta:
     mem: 128M
     services: []
-  dir: node/node-env
+  repo: git://github.com/Cloud-Apps/node-env.git
 - id: multisweeper
   name: MultiSweeper
   desc: A Multiplayer Minesweeper-style Game
