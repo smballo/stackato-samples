@@ -13,7 +13,7 @@ apps:
   meta:
     mem: 128M
     services: [mysql]
-  dir: perl/bugzilla
+  repo: git://github.com/Cloud-Apps/bugzilla.git
 - id: env
   name: Env
   desc: Simple Sample App to Print Environment Variables
@@ -31,7 +31,7 @@ apps:
   meta:
     mem: 128M
     services: [redis]
-  dir: node/multisweeper
+  repo: git://github.com/Cloud-Apps/multisweeper.git
 - id: photobooth
   name: Photo Booth
   desc: A Photo Booth
