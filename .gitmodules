@@ -28,3 +28,6 @@
 [submodule "clojure/live-cljs"]
 	path = clojure/live-cljs
 	url = git://github.com/ActiveState/live-cljs.git
+[submodule "python/httpbin"]
+	path = python/httpbin
+	url = git://github.com/ActiveState/httpbin.git
