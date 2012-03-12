@@ -10,9 +10,6 @@ applications:
     stackato:
       requirements:
         pypm: [celery]
-      min_version:
-        server: 0.9.0.143
-        client: 1.0
 
   worker:
     name: celery-worker
@@ -31,6 +28,3 @@ applications:
         pre-running:
           - sudo cp $HOME/fstab /etc/fstab
           - sudo mount /dev/shm
-      min_version:
-        server: 0.9.0.143
-        client: 1.0
