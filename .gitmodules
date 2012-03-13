@@ -27,7 +27,7 @@
 	url = git://github.com/ActiveState/mezzanine-stackato.git
 [submodule "python/flaskbars"]
 	path = python/flaskbars
-	url = git@github.com:ActiveState/flaskbars.git
+	url = git://github.com/ActiveState/flaskbars.git
 [submodule "clojure/live-cljs"]
 	path = clojure/live-cljs
 	url = git://github.com/ActiveState/live-cljs.git
