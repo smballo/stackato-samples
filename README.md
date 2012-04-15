@@ -1,3 +1,18 @@
+IMPORTANT NOTE - DEPRECATED
+===========================
+
+This repository has been deprecated as of April 15, 2012. All the individual
+apps inside this repo have been moved into separate repos under
+https://github.com/Stackato-Apps/
+
+t checkout -- <file>Furthermore, this repo contains submodule pointers to all the new repos. You
+can use it to clone all the repos into one place. Just run these commands:
+
+    git submodule init
+    git submodule sync
+    git submodule update
+
+
 Stackato Samples
 ================
 
