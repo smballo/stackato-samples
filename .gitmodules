@@ -3,31 +3,31 @@
 	url = git://github.com/Stackato-Apps/4clojure.git
 [submodule "clojure/clojuresphere"]
 	path = clojure/clojuresphere
-	url = git://github.com/ActiveState/clojuresphere.git
+	url = git://github.com/Stackato-Apps/clojuresphere.git
 [submodule "clojure/live-cljs"]
 	path = clojure/live-cljs
-	url = git://github.com/ActiveState/live-cljs.git
+	url = git://github.com/Stackato-Apps/live-cljs.git
 [submodule "clojure/rageviewer"]
 	path = clojure/rageviewer
-	url = git://github.com/ActiveState/rageviewer.git
+	url = git://github.com/Stackato-Apps/rageviewer.git
 [submodule "clojure/twitter-example"]
 	path = clojure/twitter-example
-	url = git://github.com/ActiveState/twitter-example.git
+	url = git://github.com/Stackato-Apps/twitter-example.git
 [submodule "node/etherpad-lite"]
 	path = node/etherpad-lite
-	url = git://github.com/ActiveState/etherpad-lite.git
+	url = git://github.com/Stackato-Apps/etherpad-lite.git
 [submodule "perl/mojo-photobooth"]
 	path = perl/mojo-photobooth
-	url = git://github.com/ActiveState/photobooth.git
+	url = git://github.com/Stackato-Apps/photobooth.git
 [submodule "perl/rubric"]
 	path = perl/rubric
-	url = git://github.com/ActiveState/rubric.git
+	url = git://github.com/Stackato-Apps/rubric.git
 [submodule "php/wordpress"]
 	path = php/wordpress
-	url = git://github.com/ActiveState/af-sample-wordpress.git
+	url = git://github.com/Stackato-Apps/af-sample-wordpress.git
 [submodule "python/httpbin"]
 	path = python/httpbin
-	url = git://github.com/ActiveState/httpbin.git
+	url = git://github.com/Stackato-Apps/httpbin.git
 [submodule "python/mezzanine"]
 	path = python/mezzanine
-	url = git://github.com/ActiveState/mezzanine-stackato.git
+	url = git://github.com/Stackato-Apps/mezzanine-stackato.git
