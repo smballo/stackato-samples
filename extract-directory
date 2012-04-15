@@ -43,13 +43,15 @@ extract() {
 
     run "cd $HOME"
 
-    run "git submodule add $public_repo_url $dir"
     run "git rm -r $dir"
     run "git add ."
     run "git commit -m 'extracted $dir into Stackato-Apps repo'"
-    run "git push --all"
-    run "git submodule sync"
-    run "git submodule update --init"
+    run "git submodule add $public_repo_url $dir"
+    run "git add ."
+    run "git commit -m 'Added $dir as a subdir to $public_repo_url'"
+#     run "git push --all"
+#     run "git submodule sync"
+#     run "git submodule update --init"
 }
 
 check() {
@@ -65,8 +67,10 @@ die() {
 
 run() {
     echo $1
-    eval $1
-    catch
+    if [ -z $EXTRACT_TEST_ONLY ]; then
+        eval $1
+        catch
+    fi
 }
 
 runx() {
