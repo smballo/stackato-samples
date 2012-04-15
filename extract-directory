@@ -49,9 +49,7 @@ extract() {
     run "git submodule add $public_repo_url $dir"
     run "git add ."
     run "git commit -m 'Added $dir as a subdir to $public_repo_url'"
-#     run "git push --all"
-#     run "git submodule sync"
-#     run "git submodule update --init"
+    run "git push origin master"
 }
 
 check() {
