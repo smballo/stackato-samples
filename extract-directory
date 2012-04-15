@@ -3,7 +3,7 @@
 DEST=../stackato-sample-repos
 GITHUB_ORG=Stackato-Apps
 GITHUB_URL=https://api.github.com/orgs/$GITHUB_ORG/repos
-HOME=${pwd}
+HOME=`pwd`
 
 usage() {
     die "$(cat <<eos
@@ -20,26 +20,36 @@ extract() {
     repo=$2
     if [ -z $dir ] || [ -z $repo ]; then usage; fi
     if [ ! -d $dir ]; then die "'$dir' is not a directory'"; fi
+
     dest_dir="$DEST/$repo"
     if [ -d $dest_dir ]; then die "$dest_dir already exists"; fi
+
     echo "Extracting '$dir' into '$dest_dir'"
+
+    dir_slash=`echo -n $dir | sed 's/\/\?$/\//'`
+    private_repo_url=git@github.com:$GITHUB_ORG/$repo.git
+    public_repo_url=git://github.com/$GITHUB_ORG/$repo.git
 
     json='{"name":"'$repo'"}'
     run "$CURL -XPOST $GITHUB_URL -d '$json'"
 
     run "cp -r . $dest_dir"
     run "cd $dest_dir"
-    run "git clean -f"
-    run "git filter-branch --prune-empty --subdirectory-filter $dir -- --all"
-    run "git remote set-url origin git@github.com:$GITHUB_ORG/$repo.git"
-    run "git push"
-    cd $HOME
+    run "git reset --hard"
+    run "git clean -fxd"
+    run "git filter-branch --prune-empty --subdirectory-filter $dir_slash -- --all"
+    run "git remote set-url origin $private_repo_url"
+    run "git push --all"
 
-    setup_submodule $dir $repo
-    run "git submodule add $repo $dir"
+    run "cd $HOME"
+
+    run "git submodule add $public_repo_url $dir"
     run "git rm -r $dir"
     run "git add ."
     run "git commit -m 'extracted $dir into Stackato-Apps repo'"
+    run "git push --all"
+    run "git submodule sync"
+    run "git submodule update --init"
 }
 
 check() {
@@ -57,6 +67,10 @@ run() {
     echo $1
     eval $1
     catch
+}
+
+runx() {
+    echo $1
 }
 
 catch() {
