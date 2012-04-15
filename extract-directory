@@ -1,0 +1,69 @@
+#!/bin/bash
+
+DEST=../stackato-sample-repos
+GITHUB_ORG=Stackato-Apps
+GITHUB_URL=https://api.github.com/orgs/$GITHUB_ORG/repos
+HOME=${pwd}
+
+usage() {
+    die "$(cat <<eos
+
+Usage:
+    extract-directory <directory-path> <repo-name>
+
+eos
+)"
+}
+
+extract() {
+    dir=$1
+    repo=$2
+    if [ -z $dir ] || [ -z $repo ]; then usage; fi
+    if [ ! -d $dir ]; then die "'$dir' is not a directory'"; fi
+    dest_dir="$DEST/$repo"
+    if [ -d $dest_dir ]; then die "$dest_dir already exists"; fi
+    echo "Extracting '$dir' into '$dest_dir'"
+
+    json='{"name":"'$repo'"}'
+    run "$CURL -XPOST $GITHUB_URL -d '$json'"
+
+    run "cp -r . $dest_dir"
+    run "cd $dest_dir"
+    run "git clean -f"
+    run "git filter-branch --prune-empty --subdirectory-filter $dir -- --all"
+    run "git remote set-url origin git@github.com:$GITHUB_ORG/$repo.git"
+    run "git push"
+    cd $HOME
+
+    setup_submodule $dir $repo
+    run "git submodule add $repo $dir"
+    run "git rm -r $dir"
+    run "git add ."
+    run "git commit -m 'extracted $dir into Stackato-Apps repo'"
+}
+
+check() {
+    if [ -z $GITHUB_USER ]; then die "Set GITHUB_USER first"; fi
+    if [ -z $GITHUB_PASS ]; then die "Set GITHUB_PASS first"; fi
+    export CURL="curl -v -i -k -u '$GITHUB_USER:$GITHUB_PASS'"
+}
+
+die() {
+    echo "$1"
+    exit 1
+}
+
+run() {
+    echo $1
+    eval $1
+    catch
+}
+
+catch() {
+    if [ $? -ne 0 ]; then
+        die "Error: command failed"
+    fi
+}
+
+check
+extract $1 $2
