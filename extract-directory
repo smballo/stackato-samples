@@ -9,7 +9,7 @@ usage() {
     die "$(cat <<eos
 
 Usage:
-    extract-directory <directory-path> <repo-name>
+    ./extract-directory <directory-path> <repo-name>
 
 eos
 )"
