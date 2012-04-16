@@ -1,5 +1,0 @@
-pyramid>=1.0a10
-pyramid_zcml
-PasteScript
-WebError
-zope.structuredtext

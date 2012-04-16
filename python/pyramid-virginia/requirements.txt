@@ -1,5 +1,0 @@
-pyramid
-weberror
-pyramid_zcml
-pastescript
-zope.structuredtext
