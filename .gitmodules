@@ -139,3 +139,6 @@
 [submodule "python/tornado-chat"]
 	path = python/tornado-chat
 	url = git://github.com/Stackato-Apps/tornado-chat.git
+[submodule "python/tornado-chat-mongo"]
+	path = python/tornado-chat-mongo
+	url = git://github.com/Stackato-Apps/tornado-chat-mongo.git
