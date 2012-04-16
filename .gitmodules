@@ -34,3 +34,6 @@
 [submodule "node/multisweeper"]
 	path = node/multisweeper
 	url = git://github.com/Stackato-Apps/multisweeper.git
+[submodule "go/go-hello"]
+	path = go/go-hello
+	url = git://github.com/Stackato-Apps/go-hello.git
