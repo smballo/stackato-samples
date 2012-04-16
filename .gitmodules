@@ -55,3 +55,6 @@
 [submodule "perl/catalyst-welcome"]
 	path = perl/catalyst-welcome
 	url = git://github.com/Stackato-Apps/catalyst-welcome.git
+[submodule "ruby/sinatra-rabbitmq"]
+	path = ruby/sinatra-rabbitmq
+	url = git://github.com/Stackato-Apps/sinatra-rabbitmq.git
