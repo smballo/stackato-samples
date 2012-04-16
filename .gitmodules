@@ -94,3 +94,6 @@
 [submodule "perl/starman"]
 	path = perl/starman
 	url = git://github.com/Stackato-Apps/starman.git
+[submodule "php/drupal"]
+	path = php/drupal
+	url = git://github.com/Stackato-Apps/drupal.git
