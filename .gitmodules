@@ -142,3 +142,6 @@
 [submodule "python/tornado-chat-mongo"]
 	path = python/tornado-chat-mongo
 	url = git://github.com/Stackato-Apps/tornado-chat-mongo.git
+[submodule "python/werkzeug-debugger"]
+	path = python/werkzeug-debugger
+	url = git://github.com/Stackato-Apps/werkzeug-debugger.git
