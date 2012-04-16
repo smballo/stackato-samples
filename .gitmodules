@@ -97,3 +97,6 @@
 [submodule "php/drupal"]
 	path = php/drupal
 	url = git://github.com/Stackato-Apps/drupal.git
+[submodule "php/phpinfo"]
+	path = php/phpinfo
+	url = git://github.com/Stackato-Apps/phpinfo.git
