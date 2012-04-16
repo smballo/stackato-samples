@@ -148,3 +148,6 @@
 [submodule "python/wsgi-helloworld"]
 	path = python/wsgi-helloworld
 	url = git://github.com/Stackato-Apps/wsgi-helloworld.git
+[submodule "python/flaskbars"]
+	path = python/flaskbars
+	url = git://github.com/Stackato-Apps/flaskbars.git
