@@ -67,3 +67,6 @@
 [submodule "ruby/sinatra-env"]
 	path = ruby/sinatra-env
 	url = git://github.com/Stackato-Apps/sinatra-env.git
+[submodule "perl/dancer-helloworld"]
+	path = perl/dancer-helloworld
+	url = git://github.com/Stackato-Apps/dancer-helloworld.git
