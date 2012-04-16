@@ -145,3 +145,6 @@
 [submodule "python/werkzeug-debugger"]
 	path = python/werkzeug-debugger
 	url = git://github.com/Stackato-Apps/werkzeug-debugger.git
+[submodule "python/wsgi-helloworld"]
+	path = python/wsgi-helloworld
+	url = git://github.com/Stackato-Apps/wsgi-helloworld.git
