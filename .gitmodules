@@ -127,3 +127,6 @@
 [submodule "python/pinax-social"]
 	path = python/pinax-social
 	url = git://github.com/Stackato-Apps/pinax-social.git
+[submodule "python/pyramid-default"]
+	path = python/pyramid-default
+	url = git://github.com/Stackato-Apps/pyramid-default.git
