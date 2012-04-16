@@ -1,6 +1,0 @@
-name: scaling
-
-framework:
-  type: perl
-
-mem: 64M
