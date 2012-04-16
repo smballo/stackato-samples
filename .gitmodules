@@ -130,3 +130,6 @@
 [submodule "python/pyramid-default"]
 	path = python/pyramid-default
 	url = git://github.com/Stackato-Apps/pyramid-default.git
+[submodule "python/pyramid-simplest"]
+	path = python/pyramid-simplest
+	url = git://github.com/Stackato-Apps/pyramid-simplest.git
