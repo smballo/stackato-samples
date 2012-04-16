@@ -124,3 +124,6 @@
 [submodule "python/moin"]
 	path = python/moin
 	url = git://github.com/Stackato-Apps/moin.git
+[submodule "python/pinax-social"]
+	path = python/pinax-social
+	url = git://github.com/Stackato-Apps/pinax-social.git
