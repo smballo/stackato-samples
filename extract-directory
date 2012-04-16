@@ -45,6 +45,11 @@ extract() {
     run "git clean -fxd"
     run "git remote set-url origin $private_repo_url"
     run "git push --all"
+    diff=`git diff remotes/origin/develop`
+    if [ -z "$diff" ]; then
+        git branch -d develop
+        git push origin --delete develop
+    fi
 
     run "cd $HOME"
 
