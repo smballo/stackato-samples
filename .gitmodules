@@ -121,3 +121,6 @@
 [submodule "python/django-gtd"]
 	path = python/django-gtd
 	url = git://github.com/Stackato-Apps/django-gtd.git
+[submodule "python/moin"]
+	path = python/moin
+	url = git://github.com/Stackato-Apps/moin.git
