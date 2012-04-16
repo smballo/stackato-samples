@@ -109,3 +109,6 @@
 [submodule "python/celery-demo"]
 	path = python/celery-demo
 	url = git://github.com/Stackato-Apps/celery-demo.git
+[submodule "python/cherrypy-py3"]
+	path = python/cherrypy-py3
+	url = git://github.com/Stackato-Apps/cherrypy-py3.git
