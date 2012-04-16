@@ -58,3 +58,6 @@
 [submodule "ruby/sinatra-rabbitmq"]
 	path = ruby/sinatra-rabbitmq
 	url = git://github.com/Stackato-Apps/sinatra-rabbitmq.git
+[submodule "ruby/rails3-dvdlender"]
+	path = ruby/rails3-dvdlender
+	url = git://github.com/Stackato-Apps/rails3-dvdlender.git
