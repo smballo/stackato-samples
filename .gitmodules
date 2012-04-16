@@ -49,3 +49,6 @@
 [submodule "perl/catalyst-tut2"]
 	path = perl/catalyst-tut2
 	url = git://github.com/Stackato-Apps/catalyst-tut2.git
+[submodule "perl/catalyst-tut3"]
+	path = perl/catalyst-tut3
+	url = git://github.com/Stackato-Apps/catalyst-tut3.git
