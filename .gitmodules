@@ -64,3 +64,6 @@
 [submodule "ruby/rails3-prezbuzz"]
 	path = ruby/rails3-prezbuzz
 	url = git://github.com/Stackato-Apps/rails3-prezbuzz.git
+[submodule "ruby/sinatra-env"]
+	path = ruby/sinatra-env
+	url = git://github.com/Stackato-Apps/sinatra-env.git
