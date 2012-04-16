@@ -103,3 +103,6 @@
 [submodule "python/bottle-currency"]
 	path = python/bottle-currency
 	url = git://github.com/Stackato-Apps/bottle-currency.git
+[submodule "python/bottle-py3"]
+	path = python/bottle-py3
+	url = git://github.com/Stackato-Apps/bottle-py3.git
