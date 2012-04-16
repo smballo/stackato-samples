@@ -40,3 +40,6 @@
 [submodule "node/node-chat"]
 	path = node/node-chat
 	url = git://github.com/Stackato-Apps/node-chat.git
+[submodule "node/node-env"]
+	path = node/node-env
+	url = git://github.com/Stackato-Apps/node-env.git
