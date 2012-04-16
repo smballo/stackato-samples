@@ -82,3 +82,6 @@
 [submodule "perl/mojo-scalingdemo"]
 	path = perl/mojo-scalingdemo
 	url = git://github.com/Stackato-Apps/mojo-scalingdemo.git
+[submodule "java/hello-java"]
+	path = java/hello-java
+	url = git://github.com/Stackato-Apps/hello-java.git
