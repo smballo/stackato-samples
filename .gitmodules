@@ -112,3 +112,6 @@
 [submodule "python/cherrypy-py3"]
 	path = python/cherrypy-py3
 	url = git://github.com/Stackato-Apps/cherrypy-py3.git
+[submodule "python/django-bookbuzz"]
+	path = python/django-bookbuzz
+	url = git://github.com/Stackato-Apps/django-bookbuzz.git
