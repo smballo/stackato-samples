@@ -151,3 +151,21 @@
 [submodule "python/flaskbars"]
 	path = python/flaskbars
 	url = git://github.com/Stackato-Apps/flaskbars.git
+[submodule "python/hellodjango"]
+	path = python/hellodjango
+	url = git://github.com/Stackato-Apps/hellodjango.git
+[submodule "misc/sphinx-demo"]
+	path = misc/sphinx-demo
+	url = git://github.com/Stackato-Apps/sphinx-demo.git
+[submodule "java/java-mysql"]
+	path = java/java-mysql
+	url = git://github.com/Stackato-Apps/java-mysql.git
+[submodule "java/mobilemail"]
+	path = java/mobilemail
+	url = git://github.com/Stackato-Apps/mobilemail.git
+[submodule "java/play-chat"]
+	path = java/play-chat
+	url = git://github.com/Stackato-Apps/play-chat.git
+[submodule "java/play-hello"]
+	path = java/play-hello
+	url = git://github.com/Stackato-Apps/play-hello.git
