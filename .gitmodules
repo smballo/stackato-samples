@@ -100,3 +100,6 @@
 [submodule "php/phpinfo"]
 	path = php/phpinfo
 	url = git://github.com/Stackato-Apps/phpinfo.git
+[submodule "python/bottle-currency"]
+	path = python/bottle-currency
+	url = git://github.com/Stackato-Apps/bottle-currency.git
