@@ -85,3 +85,6 @@
 [submodule "java/hello-java"]
 	path = java/hello-java
 	url = git://github.com/Stackato-Apps/hello-java.git
+[submodule "java/hello-spring-mysql"]
+	path = java/hello-spring-mysql
+	url = git://github.com/Stackato-Apps/hello-spring-mysql.git
