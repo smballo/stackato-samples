@@ -133,3 +133,6 @@
 [submodule "python/pyramid-simplest"]
 	path = python/pyramid-simplest
 	url = git://github.com/Stackato-Apps/pyramid-simplest.git
+[submodule "python/pyramid-virginia"]
+	path = python/pyramid-virginia
+	url = git://github.com/Stackato-Apps/pyramid-virginia.git
