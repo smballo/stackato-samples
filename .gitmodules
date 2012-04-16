@@ -61,3 +61,6 @@
 [submodule "ruby/rails3-dvdlender"]
 	path = ruby/rails3-dvdlender
 	url = git://github.com/Stackato-Apps/rails3-dvdlender.git
+[submodule "ruby/rails3-prezbuzz"]
+	path = ruby/rails3-prezbuzz
+	url = git://github.com/Stackato-Apps/rails3-prezbuzz.git
