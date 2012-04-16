@@ -118,3 +118,6 @@
 [submodule "python/django-default"]
 	path = python/django-default
 	url = git://github.com/Stackato-Apps/django-default.git
+[submodule "python/django-gtd"]
+	path = python/django-gtd
+	url = git://github.com/Stackato-Apps/django-gtd.git
