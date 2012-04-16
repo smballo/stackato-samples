@@ -24,6 +24,7 @@ extract() {
     fi
     if [ -z $repo ]; then usage; fi
     if [ ! -d $dir ]; then die "'$dir' is not a directory'"; fi
+    if [ -d "$dir/.git" ]; then die "'$dir' has already been extracted!"; fi
 
     dest_dir="$DEST/$repo"
     if [ -d $dest_dir ]; then die "$dest_dir already exists"; fi
