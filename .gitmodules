@@ -136,3 +136,6 @@
 [submodule "python/pyramid-virginia"]
 	path = python/pyramid-virginia
 	url = git://github.com/Stackato-Apps/pyramid-virginia.git
+[submodule "python/tornado-chat"]
+	path = python/tornado-chat
+	url = git://github.com/Stackato-Apps/tornado-chat.git
