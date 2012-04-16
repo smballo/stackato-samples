@@ -73,3 +73,6 @@
 [submodule "perl/feersum"]
 	path = perl/feersum
 	url = git://github.com/Stackato-Apps/feersum.git
+[submodule "perl/mason-helloworld"]
+	path = perl/mason-helloworld
+	url = git://github.com/Stackato-Apps/mason-helloworld.git
