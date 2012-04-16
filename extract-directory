@@ -9,7 +9,7 @@ usage() {
     die "$(cat <<eos
 
 Usage:
-    ./extract-directory <directory-path> <repo-name>
+    ./extract-directory <directory-path> [<repo-name>]
 
 eos
 )"
@@ -18,7 +18,11 @@ eos
 extract() {
     dir=$1
     repo=$2
-    if [ -z $dir ] || [ -z $repo ]; then usage; fi
+    if [ -z $dir ]; then usage; fi
+    if [ -z $repo ]; then
+        repo=`echo -n $dir | sed 's/[^\/]*\/\([^\/]*\).*/\1/'`
+    fi
+    if [ -z $repo ]; then usage; fi
     if [ ! -d $dir ]; then die "'$dir' is not a directory'"; fi
 
     dest_dir="$DEST/$repo"
@@ -36,8 +40,8 @@ extract() {
     run "cp -r . $dest_dir"
     run "cd $dest_dir"
     run "git reset --hard"
-    run "git clean -fxd"
     run "git filter-branch --prune-empty --subdirectory-filter $dir_slash -- --all"
+    run "git clean -fxd"
     run "git remote set-url origin $private_repo_url"
     run "git push --all"
 
