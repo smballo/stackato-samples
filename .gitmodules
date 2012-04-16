@@ -115,3 +115,6 @@
 [submodule "python/django-bookbuzz"]
 	path = python/django-bookbuzz
 	url = git://github.com/Stackato-Apps/django-bookbuzz.git
+[submodule "python/django-default"]
+	path = python/django-default
+	url = git://github.com/Stackato-Apps/django-default.git
