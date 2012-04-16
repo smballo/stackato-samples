@@ -106,3 +106,6 @@
 [submodule "python/bottle-py3"]
 	path = python/bottle-py3
 	url = git://github.com/Stackato-Apps/bottle-py3.git
+[submodule "python/celery-demo"]
+	path = python/celery-demo
+	url = git://github.com/Stackato-Apps/celery-demo.git
