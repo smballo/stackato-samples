@@ -46,3 +46,6 @@
 [submodule "perl/bugzilla"]
 	path = perl/bugzilla
 	url = git://github.com/Stackato-Apps/bugzilla.git
+[submodule "perl/catalyst-tut2"]
+	path = perl/catalyst-tut2
+	url = git://github.com/Stackato-Apps/catalyst-tut2.git
