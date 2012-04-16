@@ -43,3 +43,6 @@
 [submodule "node/node-env"]
 	path = node/node-env
 	url = git://github.com/Stackato-Apps/node-env.git
+[submodule "perl/bugzilla"]
+	path = perl/bugzilla
+	url = git://github.com/Stackato-Apps/bugzilla.git
