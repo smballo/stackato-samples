@@ -37,3 +37,6 @@
 [submodule "go/go-hello"]
 	path = go/go-hello
 	url = git://github.com/Stackato-Apps/go-hello.git
+[submodule "node/node-chat"]
+	path = node/node-chat
+	url = git://github.com/Stackato-Apps/node-chat.git
