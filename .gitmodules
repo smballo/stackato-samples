@@ -61,9 +61,6 @@
 [submodule "ruby/rails3-dvdlender"]
 	path = ruby/rails3-dvdlender
 	url = git://github.com/Stackato-Apps/rails3-dvdlender.git
-[submodule "ruby/rails3-prezbuzz"]
-	path = ruby/rails3-prezbuzz
-	url = git://github.com/Stackato-Apps/rails3-prezbuzz.git
 [submodule "ruby/sinatra-env"]
 	path = ruby/sinatra-env
 	url = git://github.com/Stackato-Apps/sinatra-env.git
@@ -166,3 +163,6 @@
 [submodule "java/play-hello"]
 	path = java/play-hello
 	url = https://github.com/Stackato-Apps/play-hello.git
+[submodule "ruby/prezbuzz"]
+	path = ruby/prezbuzz
+	url = git://github.com/Stackato-Apps/prezbuzz.git
