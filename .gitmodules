@@ -88,9 +88,6 @@
 [submodule "java/hello-spring-mysql"]
 	path = java/hello-spring-mysql
 	url = git://github.com/Stackato-Apps/hello-spring-mysql.git
-[submodule "clojure/ring-helloworld"]
-	path = clojure/ring-helloworld
-	url = git://github.com/Stackato-Apps/ring-helloworld.git
 [submodule "perl/starman"]
 	path = perl/starman
 	url = git://github.com/Stackato-Apps/starman.git
