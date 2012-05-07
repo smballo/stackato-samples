@@ -163,3 +163,6 @@
 [submodule "ruby/prezbuzz"]
 	path = ruby/prezbuzz
 	url = git://github.com/Stackato-Apps/prezbuzz.git
+[submodule "java/mobile-mail"]
+	path = java/mobile-mail
+	url = git://github.com/Stackato-Apps/mobile-mail.git
