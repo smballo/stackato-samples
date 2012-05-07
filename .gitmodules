@@ -154,8 +154,8 @@
 [submodule "java/java-mysql"]
 	path = java/java-mysql
 	url = git://github.com/Stackato-Apps/java-mysql.git
-[submodule "java/mobile-mail"]
-	path = java/mobile-mail
+[submodule "java/mobilemail"]
+	path = java/mobilemail
 	url = https://github.com/Stackato-Apps/mobile-mail.git
 [submodule "java/play-chat"]
 	path = java/play-chat
