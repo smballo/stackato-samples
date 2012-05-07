@@ -166,3 +166,6 @@
 [submodule "java/mobile-mail"]
 	path = java/mobile-mail
 	url = git://github.com/Stackato-Apps/mobile-mail.git
+[submodule "java/pet-clinic"]
+	path = java/pet-clinic
+	url = git://github.com/Stackato-Apps/pet-clinic.git
