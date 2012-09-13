@@ -1,32 +1,19 @@
-Stackato Samples
-================
+Stackato Samples (Deprecated)
+=============================
 
-The applications in this repository can all be run on ActiveState's
-[Stackato](http://activestate.com/stackato) cloud hosting platform.
+This repository is no longer maintained, and many of the
+samples will not work properly on the latest version of Stackato.
 
-Use the '--recursive' option when cloning this repository to include all
-of the submodules. If you've already cloned it, run these commands:
+A list of working samples sorted by language can be found here:
 
-    git submodule init
-    git submodule sync
-    git submodule update
+ http://community.activestate.com/stackato/demos
 
-The canonical repositories the submodules can be found in
-[Stackato-Apps](https://github.com/Stackato-Apps/) which may
-include recent changes not reflected here.
+These samples are mostly hosted on Github here:
 
-Using the Samples
------------------
- 
-You'll need a [Stackato VM](http://www.activestate.com/stackato/get_stackato) or an account on a
-Stackato PaaS and the [stackato client](http://www.activestate.com/stackato/download_client) to deploy
-these demos.
+ https://github.com/Stackato-Apps
 
-If you have ActivePython 2.7 or 3.2, the stackato client can be
-installed using pypm:
+Stackato is a cloud application platform for creating your own
+Platform-as-a-Service. You can download Stackato and find out more about
+it here:
 
-    pypm install stackato
-  
-Specific instructions on configuring and pushing are in the README.md
-file for each application, as the configuration steps differ slightly
-for each one.
+ http://www.activestate.com/stackato/get_stackato
